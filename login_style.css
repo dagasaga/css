@@ -1,0 +1,196 @@
+/* MAIN PARTS */
+html { height: 100%; }
+body {
+    height:100%;
+    min-height: 100%;
+
+    position:relative;
+    margin: 0 0 0 0;
+
+    background: #0D353B;
+    color: black;
+
+    background: url("http://ivanbragatto.byethost24.com/css/images/koeum_syronn2.jpg") no-repeat center center fixed, linear-gradient(black, white);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login_logo{
+    position: fixed;
+    left: 150px;
+    top: 20px;
+}
+
+#content {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    border: 15px;
+    position: absolute;
+    top: 2.5em;
+    width: 99.5%;
+    height: 90.5%;
+    /* background-color: #F7F7F7; */
+
+}
+
+#content #scrollableContent {
+    height: 95%;
+    width: 100%;
+    overflow-y: auto;
+    background: linear-gradient(white, #F7F7F7);
+    margin: 0px;
+    color: black;
+    /* overflow: scroll; */
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+    font-family: courier-new, "Helvetica", sans-serif;
+}
+
+#content #scrollableContent #paddingContent {
+    padding: 5px;
+}
+
+#footer {
+    position:fixed;
+    text-align: right;
+    bottom:0px;
+    right:1em;
+
+    margin-top: 5px;
+    margin-left: 5px;
+
+    padding-top: 8px;
+    padding-left: 8px;
+
+    height:1.5em;
+    width:98.5%;
+
+    color: white;
+}
+
+
+/* FORMS */
+.login-card {
+    position: fixed;
+    padding: 20px;
+    width: 274px;
+    /* background-color: #F7F7F7; */
+    background: linear-gradient(#F7F7F7, white);
+    color: black;
+    top:125px;
+    right: 100px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: "Helvetica", sans-serif;
+}
+
+.login-card h1 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.3em;
+    color: black;
+
+}
+
+.login-card input[type=submit] {
+    width: 100%;
+    height: 2em;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1.2em;
+    border: 0px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+
+    background-color: #4d90fe;
+}
+
+.login-card input[type=submit]:hover {
+    /* border: 1px solid #2f5bb7; */
+    border: 0px;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    background-color: #357ae8;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.login-card input[type=text], input[type=password] {
+    height: 44px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    /* border-radius: 2px; */
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.login-card input[type=text]:hover, input[type=password]:hover {
+    border: 1px solid #b9b9b9;
+    border-top: 1px solid #a0a0a0;
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.login {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    height: 36px;
+    padding: 0 8px;
+    /* border-radius: 3px; */
+    /* -webkit-user-select: none;
+      user-select: none; */
+}
+
+.login-submit {
+    /* USELESS? */
+    /* border: 1px solid #3079ed; */
+    border: 0px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background-color: #4d90fe;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.login-submit:hover {
+    /* border: 1px solid #2f5bb7; */
+    border: 0px;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    background-color: #357ae8;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.login-card a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity ease 0.5s;
+}
+
+.login-card a:hover {
+    opacity: 1;
+}
+
+.login-help {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
