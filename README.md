@@ -6,5 +6,5 @@ INSTALLATION
 2. Import SQL into your MySQL database (run data.sql inside phpmyadmin, for example)
 3. Use admin/admin as username/password
 4. Go to <Configurations> to set own password and add users
-5. Remember to assign a profile to each new user
+5. Remember to assign a profile to every new user
 6. Edit ACL for profile specific access
