@@ -745,10 +745,14 @@ table#collapsed {
 }
 
 #panel, .flip {
-
 }
 
 #panel {
-    /* display: none; */
+}
+
+#messages_panel, .messages_flip {
+}
+
+#messages_panel {
 }
 

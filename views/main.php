@@ -69,6 +69,7 @@
             }?>
         </div>
 
+    <?php if (file_exists ('js/functions.php')) require_once 'js/functions.php'; ?>
     </body>
 
 </html>

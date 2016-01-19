@@ -5,10 +5,12 @@ class homeController {
     public function __destruct(){}
 
     public function index (){
-        $content = '';
+        $content = '<div class="third_left">';
+
         require_once 'views/help/help1.php';
+        require_once 'views/messages/messages.php';
 
-
+        $content .= '</div>';
 
 /************  left/middle ************/
 
