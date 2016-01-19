@@ -18,7 +18,7 @@ class configurationController {
         $content .= "<div class='link_button'><a href='?controller=weekdays&action=index'>Weekdays</a> - Edit weekdays. Mon, Tue, Wed, Thu, Fri, Sat, Sun are the default values. You can change for Khmer, if desired.</div>";
         $content .= "<p>-------------------ADMIN SECTION------------------";
         $content .= "<div class='link_button'><a href='?controller=admin&action=users_index'>Users</a> - Add/Edit/Delete users. If a user forgets his/her password, the [admin] can come here. .</div>";
-
+        $content .= "missing: departments, positions";
         $output['content'] = $content;
 
         return $output;

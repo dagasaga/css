@@ -72,9 +72,9 @@ class loginController {
             //die();
             */
 
-
+            // for PHP <=5.5.0
             //if ($connection->get_row_num()==1 ) {
-            if (crypt ($password, MY_SALT) == $hash) {       // for PHP <=5.5.0
+            if (crypt ($password, MY_SALT) == $hash) {
                 /* GATEWAY: define here all session variables based on user:
                  * User Variables:
                  *      1. css_username

@@ -164,17 +164,18 @@ if (array_key_exists($controller, $controller_list)){
             // move main_menu OUT from routes.php
             // should be accessible to login.login, so when an admin logs in he/she can see additional links
             $output['main_menu'] = "
-                <li><a href='?controller=home&action=index'>Home</a></li>
-                <li><a href='?controller=students&action=index'>Students</a></li>
-                <li><a href='?controller=teachers&action=index'>Teachers</a></li>
-                <li><a href='?controller=configuration&action=index'>Configuration</a></li>
+                <li><a href='?controller=home&action=index'><img src='ico/house204.png' alt='' width='20'> Home</a></li>
+                <li><a href='?controller=students&action=index'><img src='ico/schoolboy1.png' alt='' width='20'> Students</a></li>
+                <li><a href='?controller=teachers&action=index'><img src='ico/teacher4.png' alt='' width='20'> Teachers</a></li>
+                <li><a href='?controller=configuration&action=index'><img src='ico/configuration24.png' alt='' width='20'> Configuration</a></li>
                 <li></li>";
 
             $output['upright_menu'] = "
                 <a href='?controller=about&action=index'>About</a> |
                 <a href='?controller=contact&action=index'>Contact</a> |
-                <a href='?controller=login&action=logout'>Logout</a> |
-                <a href='?controller=admin&action=log'>log</a>";
+                <a href='?controller=admin&action=log'>log</a> |
+                <a href='?controller=login&action=logout'>Logout</a>
+                ";
 
             require_once $output['page'];
         } else {

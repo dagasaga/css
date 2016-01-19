@@ -5,22 +5,10 @@ class homeController {
     public function __destruct(){}
 
     public function index (){
-        $content = "<div class='third_left'>";
-        $content .= "<table id=pan2>";
-        $content .= "<tr><td><div class='table_title1'>";
-        $content .= "<p>Welcome to CSS School Management System</div>";
-        $content .= "</td></tr><tr><td>";
-        $content .= "<p>When creating a new school year:";
-        $content .= "<p>1. Create an active school year";
-        $content .= "<p>2. Add students. If a student quits, INACTIVATE him/her instead of deleting.";
-        $content .= "<p>3. Add teachers. If a teacher stops, INACTIVATE him/her.";
-        $content .= "<p>4. Add subjects.";
-        $content .= "<p>5. Move students into classes.";
-        $content .= "<p>6. Add curricula.";
-        $content .= "<p>7. Build a timetable with curricula.";
-        $content .= "<p>Presence list for both students and teachers are now available for each curricula.";
-        $content .= "</td></tr></table>";
-        $content .= "</div>";
+        $content = '';
+        require_once 'views/help/help1.php';
+
+
 
 /************  left/middle ************/
 

@@ -48,8 +48,10 @@ table#pan2 {
 }
 
 table#collapsed {
+    border-collapse: collapse;
+    border: 0px;
     width: 99%;
-    border-color: white;
+    
     
 }
 
@@ -666,6 +668,24 @@ table#collapsed {
 
 /* GRID SYSTEM */
 
+/* about grid */
+.about .logo {
+    display: inline;
+    position: fixed;
+    top: 35%;
+    left: 20%;
+}
+
+.about .message {
+    display: inline;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    width: 40%;
+
+}
+
+
 /* student details left grid */
 .column_left {
     float: left;
@@ -723,3 +743,12 @@ table#collapsed {
     bottom: 0;
 
 }
+
+#panel, .flip {
+
+}
+
+#panel {
+    /* display: none; */
+}
+

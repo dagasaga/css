@@ -6,7 +6,7 @@ class htmloutput {
 
      * @return string
      */
-    public function query_output_MARKED_FOR_DELETE($data)
+    public function query_output($data)
     {
 
 
