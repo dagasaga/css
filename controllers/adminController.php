@@ -4,6 +4,31 @@ class adminController {
     public function __clone(){}
     public function __destruct(){}
 
+    public function login_activity ()
+    {
+        $connection = new database();
+        $table = new simple_table_ops();
+
+        $content = "";
+
+        $columns = array('Profile', 'User ID', 'Username', 'email', 'IP', 'timestamp');
+
+        $table->set_html_table_column_names($columns);
+
+        $sql = "SELECT login_activity.login_activity_id, profiles.profile, login_activity.user_id, login_activity.username, login_activity.email, login_activity.ip_address, login_activity.login_time
+                FROM login_activity
+                JOIN profiles ON profiles.profile_id = login_activity.profile_id
+                ORDER BY login_activity.login_time";
+
+        $table->set_main_table($connection->query($sql));
+
+        $content .= "<table width='100%'>".$table->get_html_table_column_names().$table->get_html_main_table().'</table>';
+
+        $output['content'] = $content;
+
+        return $output;
+
+    }
     public function users_index(){
         // show tables: users, profiles, positions and departments
         //
@@ -196,6 +221,7 @@ class adminController {
 
     public function users_update()
     {
+        // TODO: priority high - copy picture to photo folder AND insert file path/name into database
         $_POST['password'] = crypt ($_POST['password'], MY_SALT);
         $update = new simple_table_ops();
         $columns = array('username', 'password', 'profile_id', 'email', 'phone', 'position_id', 'department_id');
@@ -581,6 +607,7 @@ class adminController {
         // show log contents
         $content = "<div class='link_button'>
                         <a href='?controller=admin&action=show_acl_map'>Show ACL map</a>
+                        <a href='?controller=admin&action=login_activity'>Login Activity</a>
                     </div>";
 
         $content .= $_SESSION['log'];

@@ -62,7 +62,7 @@ $controller_list = array (
     'users'         =>          'register', 'forgot', 'reset', 'submit',
     'contact'       => 'index',
     'export'        => 'students', 'teachers', 'attendances', 'results', 'timetables',
-    'admin'         => 'index', 'log', 'users_index', 'users_add', 'users_details', 'users_update', 'users_delete', 'acl_index', 'acl_add', 'acl_details', 'acl_delete', 'acl_update', 'controllers_index', 'controllers_add', 'controllers_details', 'controllers_delete', 'controllers_update', 'profiles_index', 'profiles_add', 'profiles_details', 'profiles_delete', 'profiles_update', 'show_acl_map'
+    'admin'         => 'index', 'log', 'users_index', 'users_add', 'users_details', 'users_update', 'users_delete', 'acl_index', 'acl_add', 'acl_details', 'acl_delete', 'acl_update', 'controllers_index', 'controllers_add', 'controllers_details', 'controllers_delete', 'controllers_update', 'profiles_index', 'profiles_add', 'profiles_details', 'profiles_delete', 'profiles_update', 'show_acl_map', 'login_activity'
 );
 
 

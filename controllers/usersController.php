@@ -2,6 +2,7 @@
 
 class usersController
 {
+    
     public function register ()
     {
         // create register form

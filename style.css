@@ -17,6 +17,10 @@ body {
     background-size: cover;
 }
 
+div.scroll {
+    overflow: scroll;
+
+}
 table {
     border-collapse: collapse;
     border: 2px solid black;
@@ -715,22 +719,24 @@ table#collapsed {
 
 .third_left {
     float: left;
-    width: 32%
+    width: 32%;
+
+
 }
 
 .third_middle {
     float: left;
-    width: 32%
+    width: 32%;
 }
 
 .third_right {
     float: left;
-    width: 36%
+    width: 36%;
 }
 
 .two_thirds_right {
     float:left;
-    width: 64%
+    width: 64%;
 }
 
 /* students courses/timetable upper right grid */

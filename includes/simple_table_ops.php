@@ -614,9 +614,9 @@ class simple_table_ops {
 
         $sql = "UPDATE ".$this->table_name." SET ".$cols." WHERE ".$this->id_column."=?";
 
-        echo "<p>sql: ".$sql."<br>";
-        echo "<p>values: ";
-        var_dump ($values);
+        //echo "<p>sql: ".$sql."<br>";
+        //echo "<p>values: ";
+        //var_dump ($values);
 
 
         $connection = new database();

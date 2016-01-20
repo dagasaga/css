@@ -18,9 +18,10 @@ body {
 }
 
 .login_logo{
-    position: fixed;
-    left: 150px;
-    top: 20px;
+    position: absolute;
+    width: 40%;
+    left: 12%;
+    top: 0%;
 }
 
 #content {
