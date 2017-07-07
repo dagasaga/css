@@ -30,7 +30,7 @@ class simple_table_ops {
     public function set_html_check_box ($check_box){
         // here, process $check_box array  into html digestible
         // each key is in fact the id column?
-        // receives: array (0 => array('ID' => 1, 'nom' => 'GAY', 'prenom' => 'Very'));
+        // receives: array (0 => array('ID' => 1, 'nom' => 'BRIGHTON', 'prenom' => 'Johnson'));
         // first column from each array is ALWAYS the id column;
         $html = '';
         foreach ($check_box as $fields){
